@@ -82,12 +82,11 @@ li > a:only-child:after { content: ''; }
 body
 {
     background-image: url(../IMAGE/background.jpg);
-    background-size: cover;
 }
 
 h1 {
    font-size: 50px;
-   color: #f0a8af;
+   color: black;
     font-family: Georgia;
 }
 
@@ -101,7 +100,7 @@ td {
 }
 
 .container {
-    margin-top: 18% !important;
+    margin-top: 5% !important;
 }
 
 img {

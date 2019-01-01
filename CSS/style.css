@@ -1,11 +1,9 @@
 /* CSS Document */
 body {
-    font-size:22px;
-    line-height: 32px;
-    word-wrap:break-word !important;
+    word-wrap: break-word !important;
     width: 100%;
     height: 100%;
-    font-family: "Source Sans Pro",  "Helvetica Neue",  Helvetica,  Arial,  sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     overflow-x: hidden;
     background-image: url(../IMAGE/background.jpg);
 }
@@ -15,11 +13,12 @@ html {
     height: 100%;
 }
 
-section:first-child{
-    position:relative;
-    margin-top:100px;
+section:first-child {
+    position: relative;
+    margin-top: 100px;
 
 }
+
 nav ul {
     padding: 0;
     margin: 0;
@@ -27,23 +26,23 @@ nav ul {
     position: relative;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     font-weight: 500;
 }
 
 nav ul li {
     background: #dc3545;
-    padding:-15px 0;
+    padding: -15px 0;
 }
 
 nav a {
-    padding:25px 10px;
-    font-size:20px;
-    text-decoration:none;
+    padding: 25px 10px;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 nav ul ul li:hover {
-    background-color: black;
+    background-color: #000000;
     font-weight: 500;
 }
 
@@ -57,27 +56,78 @@ nav ul ul {
 
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
-    display:inherit;
+    display: inherit;
 }
 
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-    width:170px;
-    float:none;
-    display:list-item;
+    width: 170px;
+    float: none;
+    display: list-item;
     position: relative;
 }
 
 /* Second, Third and more Tiers	*/
 nav ul ul ul li {
     position: relative;
-    top:-55px;
-    left:170px;
+    top: -55px;
+    left: 170px;
 }
 
+
 /* Change this in order to change the Dropdown symbol */
-li > a:after { content:  ' +'; }
-li > a:only-child:after { content: ''; }
+li > a:after {
+    content: ' +';
+}
+
+li > a:only-child:after {
+    content: '';
+}
+
+.container {
+    margin-top: 10% !important;
+}
+
+#left {
+    float: left;
+    border-right: 1px solid black;
+    line-height: normal !important;
+    padding: 2%;
+    background-color: #dc3545;
+}
+
+#right {
+    position: relative;
+    float: left;
+    margin-left: 3%;
+}
+
+/* TOOLTOP */
+
+.tooltip_div {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    max-width: 300px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+/*pocitadlo*/
+#CounterVisitor{
+    border-style: dashed;
+}
 
 
 /* clanky CSS*/
