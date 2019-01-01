@@ -1,0 +1,110 @@
+/* CSS Document */
+body {
+    font-size:22px;
+    line-height: 32px;
+    word-wrap:break-word !important;
+    width: 100%;
+    height: 100%;
+    font-family: "Source Sans Pro",  "Helvetica Neue",  Helvetica,  Arial,  sans-serif;
+    overflow-x: hidden;
+    color:black;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+section:first-child{
+    position:relative;
+    margin-top:100px;
+
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li:hover{
+    font-weight: 500;
+}
+
+nav ul li {
+    background: #dc3545;
+    padding:-15px 0;
+}
+
+nav a {
+    padding:25px 10px;
+    font-size:20px;
+    text-decoration:none;
+}
+
+nav ul ul li:hover {
+    background-color: #000000;
+    font-weight: 500;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 30px; /* the height of the main nav */
+    padding: 25px 0;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+    position: relative;
+    top:-55px;
+    left:170px;
+}
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+body
+{
+    background-image: url(../IMAGE/background.jpg);
+    background-size: cover;
+}
+
+h1 {
+   font-size: 50px;
+   color: #f0a8af;
+    font-family: Georgia;
+}
+
+table {
+    background-color: white !important;
+    font-family: Georgia;
+}
+
+td {
+    text-align: center;
+}
+
+.container {
+    margin-top: 18% !important;
+}
+
+img {
+    height: 25px;
+    width: 25px;
+}

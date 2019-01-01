@@ -1,0 +1,151 @@
+/* CSS Document */
+body {
+    font-size:22px;
+    line-height: 32px;
+    word-wrap:break-word !important;
+    width: 100%;
+    height: 100%;
+    font-family: "Source Sans Pro",  "Helvetica Neue",  Helvetica,  Arial,  sans-serif;
+    overflow-x: hidden;
+    background-image: url(../IMAGE/background.jpg);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+section:first-child{
+    position:relative;
+    margin-top:100px;
+
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li:hover{
+    font-weight: 500;
+}
+
+nav ul li {
+    background: #dc3545;
+    padding:-15px 0;
+}
+
+nav a {
+    padding:25px 10px;
+    font-size:20px;
+    text-decoration:none;
+}
+
+nav ul ul li:hover {
+    background-color: black;
+    font-weight: 500;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 30px; /* the height of the main nav */
+    padding: 25px 0;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+    position: relative;
+    top:-55px;
+    left:170px;
+}
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+
+.section .row{
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+.section .row .col-md-6{
+    background: #f5f5f5;
+    margin-right: -2%;
+    padding: 5%;
+}
+.section h2{
+    color: #df535e;
+    font-size: 90px;
+
+}
+.section h3{
+    color: #004085;
+}
+.section p{
+    margin-top: 10%;
+    color: #545b62;
+}
+.section img
+{
+    width: 100%;
+}
+
+ul.socialIcons {
+    padding: 0;
+    text-align: center;
+}
+.socialIcons li {
+    background: yellow;
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    margin-top: 15%;
+    border-radius: 2em;
+    overflow:hidden;
+}
+.socialIcons li a {
+    display: block;
+    padding: .5em;
+    max-width: 2.3em;
+    min-width: 2.3em;
+    height: 2.3em;
+    white-space: nowrap;
+    line-height: 1.5em;
+    transition:.5s;
+    text-decoration: none;
+    font-family: arial;
+    color: #fff;
+}
+.socialIcons li i {
+    margin-right:.5em;
+}
+.socialIcons li:hover a {
+    max-width:200px;
+    padding-right:1em;
+}
+.socialIcons .facebook {
+    background: #3b5998;
+    box-shadow: 0 0 16px #3b5998;
+}
+
+.socialIcons .instagram {
+    background: #cd486b;
+    box-shadow: 0 0 16px #cd486b;
+}
